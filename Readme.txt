@@ -7,7 +7,7 @@ The program utilizes the stegano library which is an open source library done wi
 Capabilities: reads in a picture file that is located in the same folder as the application, it then hides whatever you want to type into the picture for safe keeping.
 When you click finish it creates a new file default name is Secret_Picture.png with the added text hidden.  The program has the ability to also reveal the hidden words from the file using the reverse process.
 
-Limitations: Currently cannot encrypt the data before hiding it, limited file types are supported (bmp,png)
+Limitations: Currently cannot encrypt the data before hiding it, limited file types are supported (bmp,png) ***Can now use Caeser Cypher***
 
 What was learned doing this project?  This was my first attempt at using GUI's so I had alot of trial and error.  The stegano library was very easy to use and understand it is also still being modified. The stegano module operates by changing the least significant bits in an image in order to preserve the image as well as possible.
 
@@ -19,5 +19,7 @@ Steps on how to use it.
 4. click finish
 5. Your new file has just been created in the same folder 
 
-to reveal the message repeat the same steps but select reveal, and then click finish.
+To reveal the message repeat the same steps but select reveal, and then click finish.
 
+New additions created 20190913
+Now created the ability to do a caeser cypher to the program. I created a seperate class called Cypher for re-usability purposes.
